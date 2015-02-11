@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- 
+
+This script implements the following features:
+  1. Names of countries must appear next to the lines as in Multi-Series Line Chart.
+  
+  2. Each line should be interpolated using "basis" or some other interpolation
+     mechanism appropriate to the data (Reference [3]). (1 point)
+
+  3. Color associated with each of the six lines must be different (
+     d3.scale.category10 to definie color scale. (1 point)
+
+  4. Thin greid line (as shown in line graph of Apple's stock prices shown
+     at the end of the assignmnent document). This can be achieved by creating sytle
+     sheet assiciated with grids, creating new functions GridXaxis, gridYAxis, and
+     then calling these functions with appropriate parameters. (2 points)
+
+  5. Add transition to the lines as shown in the class for line graph oif Apple
+     Stock prices and as described in Reference[4] below. (2 points).
+
+
+Resource (references):
+  1. BarBraph.css, .html, .css, .js
+  2. Line Chart by Mike Bostock: http://bl.ocks.org/mbostock/3883245
+  3. Multi-Series Line Chart by Mike Bostock: bl.ocks.org/mbostock/3884955
+  4. Notes on Animating Line Charts with D3: http://big-elephants.com/2014-06/unrolling-line-charts-d3js/
+
+Implementation Priority Queue:
+  1. Format and load data (printing to console).
+  2. Point graph of names of countries.
+  3. Tickmarks and labels.
+  4. Interpolate.
+  5. Add color.
+  ....
+
+
+Testing again
+-->
+
+<!doctype html>
+<html> 
+    
+  <head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="MultiLine.css">  
+    <!-- d3.js source -->
+    <script type= "text/javascript" src="http://d3js.org/d3.v3.min.js"></script> 
+  </head>
+    
+  <body>
+    <h1 style = "text-align:center; color:#3030ff"><bold>2010 gdp</bold></h1>
+    <!-- your d3.js code for making a bar graph -->
+    <script type="text/javascript" src="MultiLine.js"></script>     
+    <!-- submission info -->
+    <h4>created by John Collins</h4>
+    <h5>Adapted from <a href=http://bl.ocks.org/mbostock/3884955">Multi-Series Line Chart by Mke Bostock</a></h5>
+      
+    <h4>description:</h4>
+    <p> Above is a visualization of the energy consumption
+         per Capita in Million BTUs per person for 111 year
+         period from 2000 to t2010 for a large number of 
+         countries.</p>
+    <!-- create a list using <ul> and <li> tag -->   
+    <h4>files submitted:</h4>
+    <ul>
+      <li>MultiLine.html</li>
+      <li>MultiLine.js</li>
+      <li>MultiLine.css</li>
+      <li>EPC_200_2010_new.csv</li>
+    </ul>
+      
+    <h4> sources: </h4>
+    <ul>
+      <li>d3 api reference</li>
+      <li>interactive data visualization for the web</li>
+      <li><a href=" http://www.d3noob.org/2013/01/adding-grid-lines-to-d3js-graph.html">Adding gride lines to a d3.js graph</a> by D3 Noob</li>
+      <li><a href="http://big-elephants.com/2014-06/unrolling-line-charts-d3js/">Notes on Animating Line Charts with D3</a> by Simon Kendall</li>
+      <li><a href="http://bost.ocks.org/mike/bar/3/" target = "_blank"> bar graph example by mike bostock</a></li>
+    </ul>
+  </body>
+    
+</html>
